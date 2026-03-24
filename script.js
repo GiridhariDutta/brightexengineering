@@ -1,34 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
     
-    // --- Typewriter Effect ---
-    const typewriterElement = document.getElementById('typewriter-text');
-    const textToType = "BRIGHTEX ENG. CO.";
-    let charIndex = 0;
-    let isDeleting = false;
-    let typingSpeed = 150;
-
-    function handleTypewriter() {
-        const currentText = textToType.substring(0, charIndex);
-        typewriterElement.textContent = currentText;
-
-        if (!isDeleting && charIndex < textToType.length) {
-            charIndex++;
-            typingSpeed = 150;
-        } else if (isDeleting && charIndex > 0) {
-            charIndex--;
-            typingSpeed = 100;
-        } else {
-            isDeleting = !isDeleting;
-            typingSpeed = isDeleting ? 2000 : 500; // Pause at end and before restart
-        }
-
-        setTimeout(handleTypewriter, typingSpeed);
-    }
-
-    if (typewriterElement) {
-        handleTypewriter();
-    }
-    
     // --- Custom Cursor ---
     const cursorDot = document.querySelector('.cursor-dot');
     const cursorGlow = document.querySelector('.cursor-glow');

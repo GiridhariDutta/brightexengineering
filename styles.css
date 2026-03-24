@@ -249,21 +249,6 @@ a {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    display: inline-block;
-    min-height: 1.2em; /* Prevent layout shift */
-}
-
-.hero-title::after {
-    content: '|';
-    margin-left: 5px;
-    background: #fff;
-    -webkit-text-fill-color: #fff;
-    animation: blink 1s infinite;
-}
-
-@keyframes blink {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
 }
 
 .hero-subtitle {
