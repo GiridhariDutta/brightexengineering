@@ -1,0 +1,7 @@
+# Images
+*.jpeg
+*.jpg
+*.png
+
+# Scripts
+convert_to_webp.py
